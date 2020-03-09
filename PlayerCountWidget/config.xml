@@ -1,0 +1,26 @@
+NOTE THIS IS AN EXAMPLE CONFIG!
+YOU MUST GENERATE A NEW PROJECT FOR TIZEN AND MAKE SURE YOU INCLUDE THE widget-content, widget-size, features, privilege, content src, access origin, and icon src
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:tizen="http://tizen.org/ns/widgets" id="https://joebohack.com" version="1.0.0" viewmodes="maximized">
+    <access origin="*" subdomains="true"></access>
+    <tizen:app-widget id="thisshouldbegenerated.PlayerCountWidget.PlayerCountWidget" primary="true">
+        <tizen:widget-label>PlayerCountWidget</tizen:widget-label>
+        <tizen:widget-content src="widget/PlayerCountWidget/index.html">
+            <tizen:widget-size preview="widget/PlayerCountWidget/assets/images/backgroundapp.png">2x2</tizen:widget-size>
+        </tizen:widget-content>
+    </tizen:app-widget>
+    <tizen:application id="thisshouldbegenerated.PlayerCountWidget" package="thisshouldbegenerated" required_version="4.0"/>
+    <author href="https://joebohack.com" email="joebohack@gmail.com">Joe Bohack</author>
+    <content src="widget/PlayerCountWidget/index.html"/>
+    <description>Player count widget for my Garry's Mod server.</description>
+    <feature name="http://tizen.org/feature/screen.size.normal"/>
+    <feature name="http://tizen.org/feature/network.internet"/>
+    <feature name="http://tizen.org/feature/network.wifi"/>
+    <feature name="http://tizen.org/feature/web.service"/>
+    <icon src="widget/PlayerCountWidget/assets/images/icon.png"/>
+    <name>PlayerCountWidget</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:profile name="wearable"/>
+</widget>
